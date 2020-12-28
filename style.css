@@ -1,0 +1,14 @@
+@import "reset.css";
+
+/* components */
+@import "components/main-box.css";
+@import "components/menu-icon.css";
+@import "components/menu.css";
+@import "components/footer.css";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}

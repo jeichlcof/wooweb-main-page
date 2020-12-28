@@ -1,0 +1,54 @@
+.menu-icon__box {
+  position: absolute;
+  top: 70px;
+  right: 15%;
+  z-index: 1;
+}
+.menu-icon__box__icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-icon__box__icon__hamburger {
+  width: 40px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+  transition: background-color 0.1s, transform 0.5s, translate 0.5s linear;
+}
+.menu-icon__box__icon__hamburger::before,
+.menu-icon__box__icon__hamburger::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+  transition: background-color 0.1s, transform 0.5s, translate 0.5s linear;
+}
+.menu-icon__box__icon__hamburger::before {
+  transform: translateY(-12px);
+}
+.menu-icon__box__icon__hamburger::after {
+  transform: translateY(12px);
+}
+
+.menu-icon__box__icon.open .menu-icon__box__icon__hamburger::before {
+  transform: rotate(45deg) translate(28px, -28px);
+}
+.menu-icon__box__icon.open .menu-icon__box__icon__hamburger::after {
+  transform: rotate(-45deg) translate(28px, 28px);
+}
+.menu-icon__box__icon.open .menu-icon__box__icon__hamburger {
+  transform: translateX(-40px);
+  background-color: transparent;
+  box-shadow: none;
+}

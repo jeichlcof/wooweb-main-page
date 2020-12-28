@@ -1,0 +1,24 @@
+.menu {
+  position: absolute;
+  width: 313px;
+  height: 100vh;
+  background-color: #7f7f7f;
+  top: 0;
+  right: 13%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu ul {
+  margin-left: 20px;
+  margin-top: 150px;
+}
+.menu ul li {
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: white;
+}
+.menu ul li:nth-child(2) {
+  margin-bottom: 100px;
+}
