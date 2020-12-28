@@ -2,7 +2,7 @@
   position: absolute;
   width: 313px;
   height: 100vh;
-  background-color: #7f7f7f;
+  background-color: rgba(0, 0, 0, 0.7);
   top: 0;
   right: 13%;
   opacity: 0;
