@@ -1,5 +1,5 @@
 @import "reset.css";
-
+@import "test.css";
 /* components */
 @import "components/main-box.css";
 @import "components/menu-icon.css";
@@ -14,4 +14,32 @@
 body {
   height: 100vh;
   overflow: hidden;
+}
+body .dot {
+  position: absolute;
+  border-radius: 100%;
+  z-index: -10;
+  background-color: #ff3838;
+  animation: anime linear infinite;
+}
+body .dot:nth-child(even) {
+  background-color: transparent;
+  border: 1px solid #ff3838;
+}
+
+@keyframes anime {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-2000%);
+    opacity: 0;
+  }
 }
