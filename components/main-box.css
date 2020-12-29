@@ -33,10 +33,10 @@
   align-items: center;
 }
 .main__box__search-bar:hover {
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 .main__box__search-bar:focus-within {
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 .main__box__search-bar input {
   width: 520px;
@@ -63,6 +63,8 @@
 }
 .main__box__tags ul li {
   font-weight: 600;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
 }
 .main__box__tags ul li:first-child {
   color: #5fd0ee;
@@ -81,4 +83,8 @@
 }
 .main__box__tags ul li:nth-child(6) {
   color: #0869ae;
+}
+
+.main__box__tags ul li:hover {
+  text-decoration: underline;
 }

@@ -1,8 +1,8 @@
 #event {
   position: absolute;
-  height: 50px;
-  width: 100px;
-  border: 2px solid red;
+  height: 30px;
+  width: 70px;
+  border: 2px solid rgb(255, 95, 95);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,4 +10,25 @@
   left: 0;
   background-color: linear-gradient(white, gray);
   cursor: pointer;
+  margin: 20px;
+  border-radius: 25px;
+  color: white;
+  background-color: rgb(255, 95, 95);
+  font-size: 10px;
+}
+#event::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 40px;
+  width: 80px;
+  top: -7px;
+  left: -7px;
+  z-index: -1;
+  border-radius: 30px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+}
+#event:hover {
+  background-color: rgba(255, 95, 95, 0.6);
+  border-color: rgba(255, 95, 95, 0.6);
 }

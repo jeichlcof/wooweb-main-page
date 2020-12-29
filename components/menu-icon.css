@@ -16,9 +16,9 @@
 .menu-icon__box__icon__hamburger {
   width: 40px;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  box-shadow: 0 2px 5px rgba(139, 139, 139, 0.2);
   transition: all 0.5s ease-in-out;
   transition: background-color 0.1s, transform 0.5s, translate 0.5s linear;
 }
@@ -28,9 +28,9 @@
   position: absolute;
   width: 40px;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  box-shadow: 0 2px 5px rgba(139, 139, 139, 0.2);
   transition: all 0.5s ease-in-out;
   transition: background-color 0.1s, transform 0.5s, translate 0.5s linear;
 }
@@ -43,12 +43,18 @@
 
 .menu-icon__box__icon.open .menu-icon__box__icon__hamburger::before {
   transform: rotate(45deg) translate(28px, -28px);
+  background-color: rgb(218, 218, 218);
 }
 .menu-icon__box__icon.open .menu-icon__box__icon__hamburger::after {
   transform: rotate(-45deg) translate(28px, 28px);
+  background-color: rgb(218, 218, 218);
 }
 .menu-icon__box__icon.open .menu-icon__box__icon__hamburger {
   transform: translateX(-40px);
   background-color: transparent;
   box-shadow: none;
+}
+
+.white {
+  background-color: white;
 }
